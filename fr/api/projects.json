@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Marketplace Platform",
+    "date": "2024-03-10",
+    "mainImage": "/portfolio/projects/web (1).png",
+    "images": ["/portfolio/projects/web (1).png", "/portfolio/projects/web (2).png", "/portfolio/projects/web (3).png"],
+    "technologies": ["Laravel php", "Tailwindcss", "MySQL", "AlpineJS","..."],
+    "description": "A complete e-commerce solution featuring real-time stock management, secure Stripe payments, and a custom admin dashboard for analytics."
+  },
+  {
+    "title": "Desktop Inventory Pro",
+    "date": "2024-01-15",
+    "mainImage": "img/project2.jpg",
+    "images": ["img/project2.jpg"],
+    "technologies": ["C#", "WinForms", "SQLite"],
+    "description": "High-performance desktop application designed for warehouse management with offline capabilities and automated reporting."
+  }
+]

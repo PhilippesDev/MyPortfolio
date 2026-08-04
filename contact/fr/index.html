@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Philippe Mirindi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        
+        <div>
+            <div class="mb-8">
+                <a href="../../fr/" class="text-[10px] uppercase tracking-[0.3em] opacity-40 hover:opacity-100 transition">← Retour</a>
+            </div>
+            <h1 class="text-5xl font-light leading-tight mb-6">
+                Prêt à <span class="font-bold">Synchroniser ?</span>
+            </h1>
+            <p class="text-white/40 text-sm leading-relaxed max-w-xs">
+                Si vous avez quelque chose en tête, n'hésitez pas à envoyer un message
+            </p>
+        </div>
+
+        <div class="relative">
+            <form id="contact-form" onsubmit="sendContact(event)">
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <span class="label-tech">Nom complet</span>
+                        <input type="text" id="prenom" required class="input-field">
+                    </div>
+                    <div>
+                        <span class="label-tech">EMAIL</span>
+                        <input type="email" id="nom" required class="input-field">
+                    </div>
+                </div>
+
+                <div>
+                    <span class="label-tech">Sujet</span>
+                    <input type="text" id="object" required class="input-field">
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-end">
+                        <span class="label-tech">Message</span>
+                        <span id="char-count" class="text-[9px] opacity-20">0/1500</span>
+                    </div>
+                    <textarea id="message" maxlength="1500" required class="input-field h-24 resize-none" oninput="updateCount()"></textarea>
+                </div>
+
+                <div class="mt-12">
+                    <button type="submit" id="btn-submit" class="btn-submit uppercase text-[11px] font-bold tracking-[0.3em]">
+                        Envoyer le message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast-container" class="fixed top-10 right-10 z-[100] space-y-2"></div>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Marketplace Platform",
+    "date": "2024-03-10",
+    "mainImage": "/portfolio/api/projects/conft.png",
+    "images": ["/portfolio/api/projects/conft.png"],
+    "technologies": ["Laravel php", "Tailwindcss", "MySQL", "AlpineJS","..."],
+    "description": "A complete e-commerce solution featuring real-time stock management, secure Stripe payments, and a custom admin dashboard for analytics."
+  },
+  {
+    "title": "Desktop Inventory Pro",
+    "date": "2025-03-14",
+    "mainImage": "/portfolio/api/projects/facr (2).jpg",
+    "images": ["/portfolio/api/projects/facr (2).jpg", "/portfolio/api/projects/facr (1).jpg"],
+    "technologies": ["C#", "WinForms", "GunaUI"],
+    "description": "High-performance desktop application designed for warehouse management with offline capabilities and automated reporting."
+  },
+  {
+    "title": "Law firm management",
+    "date": "2025-06-15",
+    "mainImage": "/portfolio/api/projects/cabinet (3).png",
+    "images": ["/portfolio/api/projects/cabinet (4).png","/portfolio/api/projects/cabinet (3).png", "/portfolio/api/projects/cabinet (2).png", "/portfolio/api/projects/cabinet (1).png"],
+    "technologies": ["php", "PrelineJS", "Tailwindcss","MySQL", "..."],
+    "description": "High-performance desktop application designed for warehouse management with offline capabilities and automated reporting."
+  },
+    {
+    "title": "National Digital Identification System",
+    "date": "2025-11-21",
+    "mainImage": "/portfolio/api/projects/rnc (1).png",
+    "images": ["/portfolio/api/projects/rnc (4).png","/portfolio/api/projects/rnc (7).png", "/portfolio/api/projects/rnc (2).png", "/portfolio/api/projects/rnc (5).png", "/portfolio/api/projects/rnc (6).png", "/portfolio/api/projects/rnc (1).png"],
+    "technologies": ["Laravel php", "ElectronJS", "css3","SQL","React", "..."],
+    "description": "High-performance desktop application designed for warehouse management with offline capabilities and automated reporting."
+  },
+  {
+    "title": "Football ai Match predict",
+    "date": "2026-01-12",
+    "mainImage": "/portfolio/api/projects/foot (3).png",
+    "images": ["/portfolio/api/projects/foot (3).png","/portfolio/api/projects/foot (2).png", "/portfolio/api/projects/foot (1).png"],
+    "technologies": ["RapidAPI", "Genai", "css3","SQL","Python", "..."],
+    "description": "High-performance desktop application designed for warehouse management with offline capabilities and automated reporting."
+  }
+  ,
+    {
+    "title": "Kasai Central Provincial Portal",
+    "date": "2026-01-12",
+    "mainImage": "/portfolio/api/projects/kas (1).png",
+    "images": ["/portfolio/api/projects/kas (1).png", "/portfolio/api/projects/kas (2).png", "/portfolio/api/projects/kas (3).png", "/portfolio/api/projects/kas (4).png", "/portfolio/api/projects/kas (5).png", "/portfolio/api/projects/kas (6).png", "/portfolio/api/projects/kas (7).png", "/portfolio/api/projects/kas (8).png", "/portfolio/api/projects/kas (9).png", "/portfolio/api/projects/kas (10).png", "/portfolio/api/projects/kas (11).png", "/portfolio/api/projects/kas (12).png", "/portfolio/api/projects/kas (13).png", "/portfolio/api/projects/kas (14).png", "/portfolio/api/projects/kas (15).png", "/portfolio/api/projects/kas (16).png", "/portfolio/api/projects/kas (17).png", "/portfolio/api/projects/kas (18).png", "/portfolio/api/projects/kas (19).png", "/portfolio/api/projects/kas (20).png"],
+    "technologies": ["HTML5", "Tailwindcss", "PrelineJS", "React", "..."],
+    "description": "Official provincial website showcasing Kasai Central's administrative services, cultural heritage, and regional development initiatives. Features interactive maps, government announcements, tourism information, and citizen portals for essential services and documentation."
+  }
+  ,
+    {
+    "title": "TOP SECURITY file protection system",
+    "date": "2026-01-12",
+    "mainImage": "/portfolio/api/projects/sec (1).png",
+    "images": ["/portfolio/api/projects/sec (1).png", "/portfolio/api/projects/sec (2).png", "/portfolio/api/projects/sec (3).png", "/portfolio/api/projects/sec (4).png", "/portfolio/api/projects/sec (5).png", "/portfolio/api/projects/sec (6).png", "/portfolio/api/projects/sec (7).png", "/portfolio/api/projects/sec (8).png", "/portfolio/api/projects/sec (9).png", "/portfolio/api/projects/sec (10).png", "/portfolio/api/projects/sec (11).png", "/portfolio/api/projects/sec (12).png"],
+    "technologies": ["C#", "WinForms framework", "AES", "Json", "..."],
+    "description": "Advanced file protection system designed to safeguard sensitive data with AES encryption and access controls and hidden directories options."
+  }
+  ,
+  {
+    "title": "Emotion emoji reactor",
+    "date": "2026-01-12",
+    "mainImage": "/portfolio/api/projects/emo (1).png",
+    "images": ["/portfolio/api/projects/emo (1).png", "/portfolio/api/projects/emo (2).png", "/portfolio/api/projects/emo (3).png", "/portfolio/api/projects/emo (4).png", "/portfolio/api/projects/emo (5).png", "/portfolio/api/projects/emo (6).png", "/portfolio/api/projects/emo (7).png", "/portfolio/api/projects/emo (8).png"],
+    "technologies": ["Python", "GenAI", "OpenCV", "Tkinter", "..."],
+    "description": "Real-time emotion recognition application that analyzes facial expressions using GenAI and OpenCV to provide instant feedback with a user-friendly interface built with Tkinter."
+  },
+  {
+    "title": "School students management system",
+    "date": "2026-04-26",
+    "mainImage": "/portfolio/api/projects/school3.png",
+    "images": [
+      "/portfolio/api/projects/school1.png",
+      "/portfolio/api/projects/school2.png",
+      "/portfolio/api/projects/school3.png",
+      "/portfolio/api/projects/school4.png",
+      "/portfolio/api/projects/school5.png",
+      "/portfolio/api/projects/school6.png",
+      "/portfolio/api/projects/school7.png",
+      "/portfolio/api/projects/school8.png",
+      "/portfolio/api/projects/school9.png",
+      "/portfolio/api/projects/school10.png",
+      "/portfolio/api/projects/school11.png",
+      "/portfolio/api/projects/school12.png",
+      "/portfolio/api/projects/school13.png",
+      "/portfolio/api/projects/school14.png",
+      "/portfolio/api/projects/school15.png",
+      "/portfolio/api/projects/school16.png",
+      "/portfolio/api/projects/school17.png",
+      "/portfolio/api/projects/school18.png",
+      "/portfolio/api/projects/school19.png"
+    ],
+    "technologies": ["MVC php", "Tailwindcss", "MySQL", "Ajax JS","..."],
+    "description": "Comprehensive school management system that streamlines administrative tasks, student records, attendance tracking, and communication between teachers, students, and parents."
+
+  }
+]

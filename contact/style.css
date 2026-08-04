@@ -1,0 +1,55 @@
+
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #000a37; 
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .input-field {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding: 12px 0;
+            width: 100%;
+            color: white;
+            transition: border-color 0.4s ease;
+            outline: none;
+            font-size: 0.95rem;
+        }
+
+        .input-field:focus {
+            border-bottom-color: #3b82f6;
+        }
+
+        .label-tech {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: rgba(255,255,255,0.7);
+            display: block;
+            margin-top: 20px;
+        }
+
+        .btn-submit {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 15px 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-submit:hover {
+            background: white;
+            color: black;
+            border-color: white;
+        }
+
+        @media (max-width: 1024px) {
+            body { overflow-y: auto; height: auto; padding: 40px 20px; }
+        }
+ 

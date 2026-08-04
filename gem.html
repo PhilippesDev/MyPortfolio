@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hero - Full Stack Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .blue-gradient-bg {
+            background: radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.15) 0%, rgba(2, 6, 23, 1) 100%);
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#020617] text-white overflow-x-hidden">
+
+    <nav x-data="{ mobileMenu: false }" class="relative z-50 flex items-center justify-between px-6 py-8 mx-auto max-w-7xl">
+        <div class="text-2xl font-extrabold tracking-tighter">Folioblox</div>
+        
+        <div class="hidden space-x-8 md:flex text-sm font-medium text-gray-400">
+            <a href="#" class="hover:text-blue-400 transition">Accueil</a>
+            <a href="#" class="hover:text-blue-400 transition">À propos</a>
+            <a href="#" class="hover:text-blue-400 transition">Projets</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="#" class="hidden md:flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition duration-300">
+                Me contacter
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+            <button @click="mobileMenu = !mobileMenu" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[85vh] flex flex-col justify-center px-6 mx-auto max-w-7xl">
+        
+        <div class="absolute inset-0 z-0 flex justify-center items-center opacity-40">
+            <img src="pfes.jpg" alt="Background" class="w-full h-full object-cover md:object-contain mix-blend-lighten pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-[#020617]"></div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-8">
+                <p class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-4">Salut, je suis un</p>
+                <h1 class="text-6xl md:text-9xl font-extrabold leading-none tracking-tighter mb-8">
+                    Développeur <br>
+                    <span class="text-blue-600">Full Stack</span>
+                </h1>
+            </div>
+
+            <div class="md:col-span-4 md:pt-20">
+                <div class="max-w-xs">
+                    <h2 class="text-xl md:text-2xl font-bold mb-4 leading-snug">
+                        Le code propre est un art qui rend l'invisible fonctionnel.
+                    </h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        De l'architecture serveur aux interfaces fluides, je bâtis des solutions numériques robustes et évolutives.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-white/10">
+            <div>
+                <span class="block text-xs font-bold text-blue-500 mb-1">#01</span>
+                <span class="text-sm font-medium text-gray-300">Frontend (React/Vue)</span>
+            </div>
+            <div>
+                <span class="block text-xs font-bold text-blue-500 mb-1">#02</span>
+                <span class="text-sm font-medium text-gray-300">Backend & API (Node/PHP)</span>
+            </div>
+            <div>
+                <span class="block text-xs font-bold text-blue-500 mb-1">#03</span>
+                <span class="text-sm font-medium text-gray-300">Architecture Database</span>
+            </div>
+            <div>
+                <span class="block text-xs font-bold text-blue-500 mb-1">#04</span>
+                <span class="text-sm font-medium text-gray-300">DevOps & Cloud</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

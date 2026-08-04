@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folioblox - Creative Director</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="text-white">
+
+    <div class="tech-gradient px-8 py-6 md:px-16 md:py-10">
+        
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tight">
+                <div class="flex">
+                    <div class="flex bg-surface hover:bg-surface-hover rounded-lg transition p-1">
+                        <nav class="flex gap-x-1" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+                        <button type="button" class="bg-blue-900 py-3 px-4 inline-flex items-center gap-x-2 text-sm text-muted-foreground-1 focus:outline-hidden font-medium rounded-lg hover:text-primary-hover ">
+                            English <img src="img/united-kingdom.png" class="w-5 f-5" alt="EN">
+                        </button>
+                        <button id="fr" onclick="loadfrench()"  type="button" class="hs-tab-active:bg-layer hs-tab-active:text-layer-foreground py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm text-muted-foreground-1 focus:outline-hidden font-medium rounded-lg hover:text-primary-hover">
+                            French <img src="img/france.png" class="w-5 f-5" alt="FR">
+                        </button>
+                        </nav>
+                    </div>
+                    </div>
+            </div>
+            <div class="flex items-center space-x-10">
+                <ul class="hidden md:flex space-x-8 text-sm font-medium opacity-80">
+                    <li><a href="#" class="hover:opacity-100 transition">Home</a></li>
+                    <li><a href="#about" class="hover:opacity-100 transition">About</a></li>
+                    <li><a href="#mystack" class="hover:opacity-100 transition">My stack</a></li>
+                    <li><a href="#projects" class="hover:opacity-100 transition">Projects</a></li>
+                </ul>
+                <a href="contact/en/" class="bg-white text-black px-6 py-3 rounded-full text-sm font-bold flex items-center group">
+                    Contact me
+                    <span class="ml-3 bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="flex-grow flex items-center content-layer mt-[50px]">
+            <div class="grid grid-cols-12 w-full items-center">
+                <div class="col-span-12 md:col-span-8">
+                    <p class="text-xl font-medium mb-4">Hi, I'm </p>
+                    <h1 class="flex flex-col text-5xl md:text-7xl font-extrabold leading-[0.9] tracking-tighter">
+                        <span>Philippe Mirindi l<span class="text-blue-500">.</span></span> 
+                        <span class="text-blue-400 text-4xl md:text-5xl mt-2">Software Developer </span>
+                    </h1>
+                    <p class="text-sm md:text-base opacity-80 mt-6 max-w-sm leading-relaxed">
+                        Design and build scalable, high-performance web and desktop applications.
+                    </p>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 flex justify-center mt-12 md:mt-0 relative">
+                    <div class="relative inline-block">
+                        
+                        <img src="img/folioimg.png" alt="Philippe" class="max-w-full h-auto">
+
+                        <div class="absolute top-4 -left-350 floating-bubble flex items-center space-x-2" style="animation-delay: 0s;">
+                            <div class="bg-white text-black px-4 py-1.5 rounded-full font-bold text-sm --shadow-xl">
+                                Creativity
+                            </div>
+                            <div class="w-4 h-4 bg-orange-500 border-2 border-white rounded-full"></div>
+                        </div>
+
+                        <div class="absolute top-1/3 -right-8 floating-bubble flex items-center space-x-2" style="animation-delay: 1s;">
+                            <div class="w-4 h-4 bg-orange-500 border-2 border-white rounded-full"></div>
+                            <div class="bg-white text-black px-4 py-1.5 rounded-full font-bold text-sm --shadow-xl">
+                                Vision
+                            </div>
+                        </div>
+
+                        <div class="absolute bottom-1/4 -left-16 floating-bubble flex items-center space-x-2" style="animation-delay: 2s;">
+                            <div class="bg-white text-black px-4 py-1.5 rounded-full font-bold text-sm --shadow-xl">
+                                Efficacity
+                            </div>
+                            <div class="w-4 h-4 bg-orange-500 border-2 border-white rounded-full"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+   
+
+    </div>
+<section id="about" class="bg-[#020617] py-24 px-8 md:px-16">
+    <div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+        
+      <span class="text-xs uppercase tracking-[0.3em] opacity-50 mb-8 font-medium">
+            About ME
+        </span>
+
+        <h2 class="text-xl md:text-2xl font-bold leading-tight md:leading-[1.1] text-white tracking-tight mb-12">
+            I am a developer focused on <span class="text-blue-400">creating applications</span> with a clear understanding of both frontend and backend. Having worked on web and desktop software, I am also <span class="text-blue-200">at ease with graphic design</span>. Passionate about AI and Cybersecurity, I am always open to learning and <span class="text-white">ready to collaborate</span> on new projects.
+        </h2>
+
+        <a href="files/Philippe_Mirindi__Resume.pdf" download class="group flex items-center bg-white/5 border border-white/10 hover:border-orange-500/50 transition-all duration-300 pl-2 pr-6 py-2 rounded-full">
+            <div class="bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center mr-4 --shadow-[0_0_15px_rgba(234,88,12,0.4)] group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    fill="currentColor" 
+                    class="w-6 h-6">
+                    
+                <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-7 2v2h14v-2H5z"/>
+                </svg>
+            </div>
+        <span class="text-sm font-bold tracking-wide text-white">Download my resume</span>
+        </a>
+
+    </div>
+</section>
+<section id="mystack" class="bg-[#020617] py-20 px-8 md:px-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
+                My Stack <span class="font-light opacity-30">| I mainly work with</span>
+            </h2>
+            <div class="h-1 w-12 bg-blue-500 mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/php/white" class="w-7 h-7" alt="PHP">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">PHP</h3>
+                    <p class="text-xs text-white/50">Backend development and server logic.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/laravel/white" class="w-7 h-7" alt="Laravel">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Laravel</h3>
+                    <p class="text-xs text-white/50">Robust framework for web applications.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/python/white" class="w-7 h-7" alt="Python">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Python</h3>
+                    <p class="text-xs text-white/50">Scripting, automation and AI.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/csharp/white" class="w-7 h-7" alt="C#">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">C#</h3>
+                    <p class="text-xs text-white/50">High-performance object-oriented programming.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/dotnet/white" class="w-7 h-7" alt="WinForms">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Windows Forms</h3>
+                    <p class="text-xs text-white/50">Creating native desktop applications.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/cplusplus/white" class="w-7 h-7" alt="C++">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">C++</h3>
+                    <p class="text-xs text-white/50">System development and high performance.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/javascript/white" class="w-7 h-7" alt="JS">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">JavaScript</h3>
+                    <p class="text-xs text-white/50">Client-side interactivity and dynamism.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-7 h-7" alt="Tailwind">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Tailwind CSS</h3>
+                    <p class="text-xs text-white/50">Fast and modern utility-first design.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/alpinedotjs/white" class="w-7 h-7" alt="Alpine">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Alpine JS</h3>
+                    <p class="text-xs text-white/50">Lightweight reactive components.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/htmx/white" class="w-7 h-7" alt="HTMX">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">HTMX</h3>
+                    <p class="text-xs text-white/50">AJAX power via HTML attributes.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/bootstrap/white" class="w-7 h-7" alt="Bootstrap">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Bootstrap</h3>
+                    <p class="text-xs text-white/50">Responsive structure and components.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/html5/white" class="w-7 h-7" alt="HTML">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">HTML</h3>
+                    <p class="text-xs text-white/50">Modern web structure and semantics.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/css/white" class="w-7 h-7" alt="CSS">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">CSS</h3>
+                    <p class="text-xs text-white/50">Styling and advanced visual design.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/photopea/white" class="w-7 h-7" alt="Photoshop">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Photoshop</h3>
+                    <p class="text-xs text-white/50">Graphic design and UI design.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/github/white" class="w-7 h-7" alt="GitHub">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Git & GitHub</h3>
+                    <p class="text-xs text-white/50">Version control and collaboration.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/react/white" class="w-7 h-7" alt="React">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">React</h3>
+                    <p class="text-xs text-white/50">Creating dynamic and performant interfaces.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/typescript/white" class="w-7 h-7" alt="TypeScript">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">TypeScript</h3>
+                    <p class="text-xs text-white/50">Typed JavaScript for robust applications.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/mysql/white" class="w-7 h-7" alt="MySQL">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">MySQL</h3>
+                    <p class="text-xs text-white/50">Relational database management.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/microsoftsqlserver/white" class="w-7 h-7" alt="SQL Server">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">SQL Server</h3>
+                    <p class="text-xs text-white/50">Microsoft data management system.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/nextdotjs/white" class="w-7 h-7" alt="Next.js">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Next.js</h3>
+                    <p class="text-xs text-white/50">React framework for SSR and performance.</p>
+                </div>
+            </div>
+
+            <div class="stack-pill group">
+                <div class="logo-box">
+                    <img src="https://cdn.simpleicons.org/figma/white" class="w-7 h-7" alt="Figma">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-white">Figma</h3>
+                    <p class="text-xs text-white/50">Collaborative UI/UX design and prototyping.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</div>
+
+<section id="projects" class="bg-[#020617] py-20 px-8 md:px-16 border-t border-white/5">
+    <h2 class="text-3xl md:text-4xl font-bold">
+        My Projects <span class="opacity-30 font-light">| Recent Work</span>
+      </h2>
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-12 flex justify-between items-end">
+        </div>
+
+        <div id="grid-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </div>
+</section>
+
+<div id="project-popup" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 md:p-8">
+    <div class="absolute inset-0 bg-black/95 backdrop-blur-md" onclick="closeProject()"></div>
+    
+    <div class="relative bg-[#0b1120] w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-[32px] --shadow-2xl">
+        <button onclick="closeProject()" class="absolute top-6 right-6 z-50 bg-white/10 hover:bg-orange-600 text-white p-2 rounded-full transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 md:p-12">
+            <div class="space-y-4">
+                <div class="relative">
+                    <div id="popup-images" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide">
+                    </div>
+                    <button id="fullscreen-btn" onclick="toggleImageFullscreen()" class="absolute top-2 right-2 z-50 bg-white/80 hover:bg-blue-600 text-white p-2 rounded-lg transition" title="View in fullscreen">
+                        <svg fill="#0317fc" class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <path d="M3,15 L3.11662113,15.0067277 C3.57570299,15.0600494 3.93995063,15.424297 3.99327227,15.8833789 L4,16 L4,20 L8,20 L8.11662113,20.0067277 C8.61395981,20.0644928 9,20.4871642 9,21 C9,21.5128358 8.61395981,21.9355072 8.11662113,21.9932723 L8,22 L3,22 L2.88337887,21.9932723 C2.42429701,21.9399506 2.06004937,21.575703 2.00672773,21.1166211 L2,21 L2,16 L2.00672773,15.8833789 C2.06004937,15.424297 2.42429701,15.0600494 2.88337887,15.0067277 L3,15 Z M21,15 C21.5128358,15 21.9355072,15.3860402 21.9932723,15.8833789 L22,16 L22,21 C22,21.5128358 21.6139598,21.9355072 21.1166211,21.9932723 L21,22 L16,22 C15.4477153,22 15,21.5522847 15,21 C15,20.4871642 15.3860402,20.0644928 15.8833789,20.0067277 L16,20 L20,20 L20,16 C20,15.4871642 20.3860402,15.0644928 20.8833789,15.0067277 L21,15 Z M8,2 C8.55228475,2 9,2.44771525 9,3 C9,3.51283584 8.61395981,3.93550716 8.11662113,3.99327227 L8,4 L4,4 L4,8 C4,8.51283584 3.61395981,8.93550716 3.11662113,8.99327227 L3,9 C2.48716416,9 2.06449284,8.61395981 2.00672773,8.11662113 L2,8 L2,3 C2,2.48716416 2.38604019,2.06449284 2.88337887,2.00672773 L3,2 L8,2 Z M21,2 L21.1166211,2.00672773 C21.575703,2.06004937 21.9399506,2.42429701 21.9932723,2.88337887 L22,3 L22,8 L21.9932723,8.11662113 C21.9399506,8.57570299 21.575703,8.93995063 21.1166211,8.99327227 L21,9 L20.8833789,8.99327227 C20.424297,8.93995063 20.0600494,8.57570299 20.0067277,8.11662113 L20,8 L20,4 L16,4 L15.8833789,3.99327227 C15.3860402,3.93550716 15,3.51283584 15,3 C15,2.48716416 15.3860402,2.06449284 15.8833789,2.00672773 L16,2 L21,2 Z"/> </g></svg>
+                    </button>
+                </div>
+                
+                <p class="text-xs text-white italic">← Swipe to see more images →</p>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <h2 id="popup-title" class="text-3xl md:text-4xl font-bold text-white mb-4"></h2>
+                <div id="popup-techs" class="flex flex-wrap gap-2 mb-6">
+                    </div>
+                <div class="h-px w-full bg-white/40 mb-6"></div>
+                <p id="popup-desc" class="text-gray-400 leading-relaxed text-xs"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="bg-[#020617] py-20 px-8 md:px-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
+                Feedback <span class="font-light opacity-30">| Community & Likes</span>
+            </h2>
+            <div class="h-1 w-12 bg-blue-500 mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 space-y-6">
+                <div class="bg-[#0b1120] p-6 rounded-2xl border border-white/5 flex items-center justify-between relative overflow-hidden">
+                    <div>
+                        <p class="text-[12px] opacity-80">Appreciations</p>
+                        <p id="like-count" class="text-3xl text-[#ff2d55]">...</p>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <button id="like-btn" onclick="handleLike()" class="bg-white/5 hover:bg-[#ff2d55]/20 p-4 rounded-full transition-all border border-white/10 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#ff2d55]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </button>
+                        <span id="like-thanks" class="text-[10px] text-green-400 font-bold mt-2 opacity-0 transition-opacity">Thanks for supporting me!</span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                    <p class="text-[12px] opacity-80"> Tell me what you think! Drop a comment or testimonial</p>
+                    <br>
+                    <input type="text" id="fb-name" placeholder="Nom Complet" class="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-sm mb-3 focus:border-orange-500 outline-none transition">
+                    <textarea id="fb-text" maxlength="300" placeholder="Votre commentaire..." class="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-sm h-24 mb-3 focus:border-orange-500 outline-none resize-none transition"></textarea>
+                    <button onclick="submitComment()" class="w-full bg-blue-500 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition text-sm">Envoyer</button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 bg-white/[0.02] rounded-2xl p-6 border border-white/5">
+                <div id="comments-list" class="divide-y divide-white/5">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="toast-container" class="fixed bottom-10 right-10 z-[200] space-y-4"></div>
+<footer class="bg-[#020617] pt-20 pb-10 px-8 md:px-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+            
+            <div class="md:col-span-5">
+                <div class="text-2xl font-bold tracking-tight mb-6">Philippe Mirindi<span class="text-blue-500">.</span></div>
+                <p class="text-sm text-white/50 leading-relaxed max-w-sm">
+                    A developer passionate about creating intuitive interfaces and robust systems.
+                    Always ready for new technological challenges and innovative collaborations
+                </p>
+                <div class="flex space-x-5 mt-8">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:-translate-y-1 transition-all border border-white/10">
+                        <img src="https://cdn.simpleicons.org/github/white" class="w-5 h-5" alt="GitHub">
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#0077b5]/20 hover:border-[#0077b5]/50 hover:-translate-y-1 transition-all border border-white/10">
+                        <img src="https://cdn.simpleicons.org/linkedin/white" class="w-4 h-4" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:-translate-y-1 transition-all border border-white/10">
+                        <img src="https://cdn.simpleicons.org/x/white" class="w-4 h-4" alt="X">
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-3">
+                <h4 class="text-xs uppercase tracking-[0.2em] font-bold text-white mb-6">Navigation</h4>
+                <ul class="space-y-4 text-sm text-white/50">
+                    <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">About Me</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">My Stack</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4">
+                <h4 class="text-xs uppercase tracking-[0.2em] font-bold text-white mb-6">Let's Talk</h4>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                    <p class="text-sm text-white/70 mb-4">Want to start a project or just say something?</p>
+                    <a href="contact/en/" class="text-blue-400 font-bold hover:underline">Click here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-[11px] text-white/30 uppercase tracking-widest">
+                &copy; 2026 Philippe Mirindi. All Rights Reserved.
+            </p>
+            <div class="flex items-center space-x-2 text-[11px] text-white/30 uppercase tracking-widest">
+                <span>Made with</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-[#ff2d55]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span>in Congo</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function loadfrench(){
+
+        window.location.href="fr/";
+    
+    }
+</script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0b10; color: white; }
+        .card-bg { background-color: #16171f; --border: 1px solid #26272e; }
+        .accent-orange { background-color: #ff7d54; }
+        .text-orange { color: #ff7d54; }
+        
+        /* Shape for the arrow button cutout */
+        .image-container {
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 85% 75%, 85% 100%, 0 100%);
+            --border-radius: 20px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(5px);
+            z-index: 50;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="p-10">
+
+    <section class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-4">My <span class="text-orange">Projects</span></h2>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+            Explore my latest works, ranging from web development to complex UI/UX designs, 
+            crafted with precision and modern technologies.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="card-bg rounded-3xl p-6 relative group">
+                <h3 class="text-left text-xl font-medium mb-12">UI/UX Design</h3>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Work" class="image-container w-full h-48 object-cover">
+                    <button onclick="openModal('UI/UX Design')" class="accent-orange absolute bottom-0 right-0 w-12 h-12 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-3xl p-6 relative group">
+                <h3 class="text-left text-xl font-medium mb-12">Web Design</h3>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1581291518066-13000b2184cc" alt="Work" class="image-container w-full h-48 object-cover">
+                    <button onclick="openModal('Web Design')" class="accent-orange absolute bottom-0 right-0 w-12 h-12 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-3xl p-6 relative group">
+                <h3 class="text-left text-xl font-medium mb-12">Web Development</h3>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Work" class="image-container w-full h-48 object-cover">
+                    <button onclick="openModal('Web Development')" class="accent-orange absolute bottom-0 right-0 w-12 h-12 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="openModal('All')" class="accent-orange mt-12 px-8 py-3 rounded-full font-medium flex items-center mx-auto hover:bg-orange-600 transition">
+            See All 
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+        </button>
+    </section>
+
+    <div id="projectModal" class="modal p-4">
+        <div class="bg-[#16171f] w-full max-w-4xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col --border --border-gray-700">
+            <div class="p-6 --border-b --border-gray-800 flex justify-between items-center">
+                <h2 id="modalTitle" class="text-2xl font-bold">Projects</h2>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white text-3xl">&times;</button>
+            </div>
+            <div id="projectsGrid" class="p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let projectsData = [];
+
+        // Load JSON data
+        fetch('projects.json')
+            .then(res => res.json())
+            .then(data => projectsData = data);
+
+        function openModal(category) {
+            const modal = document.getElementById('projectModal');
+            const grid = document.getElementById('projectsGrid');
+            const title = document.getElementById('modalTitle');
+            
+            title.innerText = category === 'All' ? 'All Projects' : `${category} Projects`;
+            grid.innerHTML = ''; // Clear previous
+
+            const filtered = category === 'All' 
+                ? projectsData 
+                : projectsData.filter(p => p.category === category);
+
+            filtered.forEach(p => {
+                grid.innerHTML += `
+                    <div class="bg-[#0a0b10] rounded-2xl overflow-hidden --border --border-gray-800 p-4">
+                        <img src="${p.images[0]}" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <span class="text-orange text-xs uppercase font-bold">${p.category}</span>
+                        <h4 class="text-lg font-semibold mt-1">${p.title}</h4>
+                        <p class="text-gray-400 text-sm mt-2">${p.description}</p>
+                    </div>
+                `;
+            });
+
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside content
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('projectModal')) closeModal();
+        }
+    </script>
+</body>
+</html>

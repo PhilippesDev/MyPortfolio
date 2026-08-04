@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folioblox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #0a1428 0%, #1e3a8a 40%, #3b82f6 100%);
+      background-size: 200% 200%;
+      animation: subtleGlow 15s ease infinite;
+    }
+
+    @keyframes subtleGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .text-glow {
+      text-shadow: 0 0 30px rgba(147, 197, 253, 0.5);
+    }
+
+    .silhouette {
+      filter: brightness(0.95) contrast(1.1);
+    }
+  </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6">
+    <div class="text-2xl font-bold tracking-tighter">Folioblox</div>
+    
+    <nav class="hidden md:flex items-center gap-10 text-sm font-medium">
+      <a href="#" class="hover:text-blue-400 transition-colors">Home</a>
+      <a href="#" class="hover:text-blue-400 transition-colors">About</a>
+      <a href="#" class="hover:text-blue-400 transition-colors">Projects</a>
+    </nav>
+
+    <a href="#" 
+       class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+      Get in touch
+      <span class="w-2 h-2 bg-black rounded-full inline-block animate-pulse"></span>
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+    
+    <!-- Silhouette -->
+    <div class="absolute bottom-0 right-8 md:right-16 lg:right-24 z-10">
+      <img src="https://i.imgur.com/0z9vK8P.png" 
+           alt="Creative Director" 
+           class="silhouette w-[380px] md:w-[460px] lg:w-[520px] h-auto drop-shadow-2xl"
+           style="filter: drop-shadow(0 25px 25px rgba(0,0,0,0.6));">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-8 pt-24 pb-16 relative z-20">
+      <div class="max-w-2xl">
+        <!-- Greeting -->
+        <p class="text-xl md:text-2xl font-light tracking-wide mb-4 text-blue-200">
+          Hey, I'm a
+        </p>
+
+        <!-- Main Title -->
+        <h1 class="text-[4.8rem] md:text-[6.2rem] lg:text-[7.2rem] leading-none font-black tracking-tighter text-white mb-8">
+          Creative<br>Director
+        </h1>
+
+        <!-- Right side text -->
+        <div class="absolute top-48 right-12 max-w-[280px] hidden lg:block">
+          <p class="text-2xl font-medium leading-tight mb-6 text-blue-100">
+            Great design should<br>feel invisible.
+          </p>
+          <p class="text-blue-200 text-[15px] leading-relaxed">
+            From logo to language, I build brands that<br>connect and convert.
+          </p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="absolute bottom-16 left-8 md:left-16 grid grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-8 text-sm">
+        <div>
+          <div class="text-blue-400 text-xs font-mono tracking-widest mb-1">#01</div>
+          <div class="font-semibold">Brand Strategy</div>
+        </div>
+        <div>
+          <div class="text-blue-400 text-xs font-mono tracking-widest mb-1">#02</div>
+          <div class="font-semibold">Brand Identity Design</div>
+        </div>
+        <div>
+          <div class="text-blue-400 text-xs font-mono tracking-widest mb-1">#03</div>
+          <div class="font-semibold">Packaging Design</div>
+        </div>
+        <div>
+          <div class="text-blue-400 text-xs font-mono tracking-widest mb-1">#04</div>
+          <div class="font-semibold">Creative Direction</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle overlay for depth -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/10 pointer-events-none"></div>
+  </section>
+
+  <script>
+    // Tailwind script already included via CDN
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
