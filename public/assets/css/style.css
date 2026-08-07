@@ -1,0 +1,175 @@
+ body {
+            font-family: 'Space Grotesk', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #020617; /* Fond de secours */
+        }
+
+        /* Dégradé Bleu Technologique / Futuriste */
+        .tech-gradient {
+            background: radial-gradient(circle at 30% 50%, #132b7a 0%, #0f172a 100%);
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Simulation de la silhouette (Overlay) */
+        .hero-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 90%;
+            z-index: 1;
+            /* Remplacer l'URL ci-dessous par l'image détourée de la personne */
+            filter: brightness(0.8) contrast(1.2);
+            mask-image: linear-gradient(to top, black 80%, transparent 100%);
+        }
+
+        .content-layer {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .outline-text {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+
+        @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        }
+        .floating-bubble {
+            animation: float 4s ease-in-out infinite;
+        }
+        .bubble-dot {
+            @apply w-4 h-4 bg-orange-500 border-2 border-white rounded-full absolute;
+        }
+
+        .stack-pill {
+        @apply relative flex items-center bg-white/5 border border-white/10 rounded-full py-3 pl-16 pr-6 transition-all duration-300;
+        }
+        .stack-pill:hover {
+            @apply bg-white/10 border-blue-500/50 -translate-y-1;
+        }
+        .logo-box {
+            @apply absolute -left-2 w-14 h-14 bg-[#0f172a] border border-white/20 rounded-full flex items-center justify-center --shadow-lg;
+        }
+        /* Design Jumeau - Section Projects */
+        .project-card {
+        background: #0b1120; /* Le bleu-noir profond de l'image */
+        border-radius: 24px;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .project-header {
+        padding: 0 24px 20px 24px;
+    }
+    .project-img-wrapper {
+        position: relative;
+        margin: 0 12px 12px 12px; /* L'image est légèrement décollée des bords */
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .project-img-wrapper img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .btn-orange {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        background: #ff5f38; /* Orange vibrant exact */
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .btn-orange:hover { transform: scale(1.1); }
+    .project-modal-card {
+    background: #020617;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 12px;
+    transition: 0.3s;
+    }
+
+    .project-modal-card:hover {
+        transform: scale(1.02);
+        border-color: #ff5f38;
+    }
+
+    .project-modal-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Animation Skeleton */
+    .skeleton {
+        background: linear-gradient(90deg, #0f172a 25%, #1e293b 50%, #0f172a 75%);
+        background-size: 200% 100%;
+        animation: skeleton-loading 1.5s infinite linear;
+        border-radius: 12px;
+    }
+
+    @keyframes skeleton-loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+
+    /* Ajustement pour que le skeleton ressemble à tes project-cards */
+    .skeleton-card {
+        background: #0b1120;
+        border-radius: 24px;
+        padding: 24px 12px 12px 12px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-card {
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+/* État désactivé du bouton like */
+.liked-btn {
+    pointer-events: none;
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.feedback-row {
+    @apply flex flex-wrap md:flex-nowrap items-start py-8 px-4 border-b border-white/[0.03] 
+           transition-all duration-300 hover:bg-white/[0.02] last:border-0;
+}
+
+/* Animation subtile pour l'entrée des nouveaux commentaires */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.feedback-row {
+    animation: slideIn 0.4s ease-out forwards;
+}

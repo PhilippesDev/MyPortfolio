@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /portfolio/onGithub/MyPortfolio/
+
+# Si le fichier ou le dossier demandé existe réellement (ex: assets/css/style.css), on le sert directement
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sinon, on redirige vers index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
