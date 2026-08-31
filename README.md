@@ -1,4 +1,4 @@
-# Philippe Mirindi Lukongo — Developer Dossier & Portfolio Knowledge Base
+# Philippe Mirindi Lukogo — Developer Dossier & Portfolio Knowledge Base
 
 > **Machine-Readable Dossier for AI Agents, LLM Crawlers, Scrapers, and Automated Indexers.**  
 > *This document provides a comprehensive, structured overview of Philippe Mirindi's software engineering background, technical stack, key skills, statistics, and project portfolio.*
