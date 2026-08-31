@@ -68,6 +68,7 @@
 
 ### **Backend Engineering**
 - **PHP**: Core PHP, Laravel Framework, MVC Architecture, RESTful API design.
+- **Javascript**: Modern JavaScript (ES6+), Asynchronous Programming, DOM Manipulation, Fetch API, REST API integration, JSON handling, Event-Driven Programming.
 - **C# / .NET**: ASP.NET Core Web API, WinForms Framework, Entity Framework Core (EF Core Code-First), CSR Pattern (Controller-Service-Repository).
 - **Python**: Automation scripting, GenAI integration, OpenCV computer vision, Tkinter GUI development.
 
@@ -78,7 +79,7 @@
 
 ### **Databases & Data Management**
 - **Relational Databases**: MySQL, PostgreSQL, Microsoft SQL Server, SQLite.
-- **ORM & Tools**: Entity Framework Core (Code-First), DTOs, Repository Patterns.
+- **ORM & Tools**: Eloquant ORM , Entity Framework Core (Code-First), DTOs, Repository Patterns.
 
 ### **Security, Architecture & APIs**
 - **Authentication & Auth**: JWT (JSON Web Tokens), Role-Based Access Control (RBAC), CORS Policy Configuration.
