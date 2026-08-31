@@ -30,7 +30,7 @@
     "Database Architecture",
     "UI/UX Design",
     "Cybersecurity Basics",
-    "Embedded Systems & Electronics"
+    "Embedded Systems & Electronics hoobies"
   ],
   "yearsOfExperience": "3+",
   "projectsCompleted": "20+",
